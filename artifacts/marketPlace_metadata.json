@@ -1,0 +1,226 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "quantity",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct marketPlace.itemsDetails[]",
+						"name": "items",
+						"type": "tuple[]"
+					}
+				],
+				"name": "addItemsBySeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sellerAddress",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "quantity",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct marketPlace.buyItemsDetails[]",
+						"name": "items",
+						"type": "tuple[]"
+					}
+				],
+				"name": "buyItemsByCustomer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSellerBasicInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							}
+						],
+						"internalType": "struct marketPlace.sellerBasic",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSellerItems",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "quantity",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct marketPlace.itemsDetails[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							}
+						],
+						"internalType": "struct marketPlace.sellerBasic",
+						"name": "seller",
+						"type": "tuple"
+					}
+				],
+				"name": "registerSeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_market_place.sol": "marketPlace"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_market_place.sol": {
+			"keccak256": "0xad5049a4f3dd8bf40429548d19d40217d1caa548a950db5d01b5b4c8318d72a2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a7285914dbb22a5f5cb76e103830b38b0ec7597917d5beed016dcf9daedf6451",
+				"dweb:/ipfs/QmUJZQRVHKrfpCo1aJsdnaRXFv25fe3pwKg1BW3fcHcCUR"
+			]
+		}
+	},
+	"version": 1
+}
